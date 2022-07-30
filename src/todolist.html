@@ -5,8 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <main>
+
+        <header>
+            <h1>
+                To Do List
+            </h1>
+        </header>
     
+        <nav>
+            <input type="checkbox" disabled>
+            <input class="inputField" type="text" placeholder="Enter task name">
+            <input class="addButton" type="button" value="Add">
+        </nav>
+    
+        <section>
+            <h2>
+                Tasks
+            </h2>
+            <ul>
+                <!-- hidden template-->
+                <li style="display: none">
+                    <input type="checkbox">
+                    <input type="text">
+                    <input class="delButton" type="button" value="Delete">
+                </li>
+            </ul>
+        </section>
+        
+    </main>
+    <script src="todolist-behavior.js"></script>
 </body>
 </html>
