@@ -26,7 +26,6 @@ input[type="button"]:active {
 input[type="checkbox"] {
     width: 35px;
     height: 35px;
-    
 }
 
 input[type="text"] {
@@ -42,13 +41,15 @@ input[type="text"]:focus::placeholder {
 body {
     height: 100vh;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
 
 main {
     width: 550px;
-    height: 600px;
+    min-height: 600px;
+    height: auto;
     background-color: cornflowerblue;
     border: 6px solid rgb(89, 125, 194);
     border-radius: 24px;
@@ -78,7 +79,7 @@ section h2 {
 }
 
 section ul li {
-    margin-top: 10px;
+    margin-bottom: 10px;
     display: flex;
     justify-content: space-around;  
 }
